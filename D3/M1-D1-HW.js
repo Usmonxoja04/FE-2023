@@ -28,16 +28,16 @@ console.log(two ? "two" : "false");
 
 
 console.log("-------------extra homeworks-------------")
-//exercise 5
+//exercise 4
 let x = 23;
-let y = 76;
-let z = 13;
+let y = -76;
+let z = -13;
 if (x>y && x>z){
     if (y>z) 
     {
         console.log(x + ", " + z + ", " +y)
     } 
-    esle 
+    else
     {
         console.log(x+ ", " + y + ", " +z)
     }
@@ -63,7 +63,7 @@ else
 }
 }  
 
-//exercise 6
+//exercise 5
 let num1 = 78
 let num2 = 22
   let result2 =  (num1 +num2)/2
