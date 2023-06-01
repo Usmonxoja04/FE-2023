@@ -98,3 +98,23 @@ let upperFirst = function(str){
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 console.log(upperFirst("i love coding"))
+
+/* EXERCISE 9
+ Write a function called "cutString" which creates a new string without the first and 
+ last character of a given string passed as a parameter.
+*/
+function cutString(str){
+
+    return str.slice(1,-1);
+}
+console.log("The new string is :",cutString('Note book'));
+
+/* EXERCISE 10
+ Write a function called "giveMeRandom" which accepts a number n and 
+ returns an array containing n random numbers between 0 and 10.
+*/
+
+function giveMeRandom(n){
+    return Math.floor(Math.random() * n);
+}
+console.log(giveMeRandom(10))
