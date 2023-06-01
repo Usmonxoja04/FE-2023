@@ -78,4 +78,23 @@ let check3and7 = function(x){
         return 'n is neither mutiple of 3 or 7';
     }
 }
-console.log(check3and7(9))
+console.log(check3and7(9));
+
+/* EXERCISE 7
+ Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
+*/
+
+let reverseString = function(str){
+    return str.split('').reverse().join('');
+}
+console.log(reverseString("Strive"));
+
+/* EXERCISE 8
+ Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed
+  as a parameter.
+*/
+
+let upperFirst = function(str){
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+console.log(upperFirst("i love coding"))
