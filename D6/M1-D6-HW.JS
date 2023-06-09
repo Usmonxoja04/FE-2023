@@ -262,16 +262,16 @@ console.log("-------------exercise 16--------------")
     Write a function called getMovieById which receives an id as a parameter and returns the movie 
     with the given id from the provided movies array.
 */
-// const getMovieById = function(id) {
-//   let foundMovie
-//   for (let i = 0; i < movies.length;i++){
-//     if (movies[i].imdbID === id){
-//       foundMovie = movies[i]
-//     }
-//   }
-//   return foundMovie
-// };
-// getMovieById(id)
+const getMovieById = function(id) {
+  let foundMovie
+  for (let i = 0; i < movies.length;i++){
+    if (movies[i].imdbID === id){
+      foundMovie = movies[i]
+    }
+  }
+  return foundMovie
+};
+getMovieById("tt0057261")
 
 console.log("-------------exercise 17---------------")
 
@@ -303,4 +303,4 @@ const searchByTitle = function(str){
   }
   return result
 };
-console.log(searchByTitle())
+console.log(searchByTitle("towers"))
