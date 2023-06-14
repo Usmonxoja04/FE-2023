@@ -1,0 +1,39 @@
+.container {
+    width: 500px;
+    background-color: yellow;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-content: flex-start;
+   color: blue;
+}
+.container div {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+div.box-model {
+    align-items: flex-end;  
+}
+.box-model:nth-child(even){
+    background-color:yellowgreen;
+}
+
+.box-1:nth-child(even){
+    background-color: aquamarine;
+}
+.content p{
+    width: 500px;
+    backface-visibility: initial;
+    border: 1px solid black;
+    background-color: steelblue;
+}
+.box-3 {
+    background-color: darkslategrey;
+}
+
+
+
+

@@ -143,23 +143,35 @@
       */
 
       const makeItClickable = function () {
-        //
-      };
+    
+          const title = document.querySelector("h1");
+          title.addEventListener("click", function (e) {
+            e.target.classList.toggle("myHeading");
+           
+          });
+        };
+        makeItClickable();
+      
 
       /* EXERCISE 10
        Change the footer text with something else when the user clicks on it.
       */
 
       const changeFooterText = function () {
-        //
-      };
+          const footer = document.querySelector(".footer");
+          footer.addEventListener("click", function(e) {
+            e.target.innerText = "something else";
+          });
+        };
+        changeFooterText();
+      
 
       /* EXERCISE 11
        Attach an event listener to the input field in the page for console logging its value just after any keystroke.
       */
 
       const inputField = document.getElementById("input-field");
-      // ...
+      // ...    
 
       /* EXERCISE 12
        Create a welcome alert message when the page successfully loads.
