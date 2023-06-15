@@ -75,7 +75,7 @@ for (let i = 0;i < 10; i++){
 };
 console.log(arrayOfArrays)
 
-console.log("--------------------------exercise 28--------------------------")
+console.log("--------------------------exercise 29--------------------------")
 //29) Create a function that gets 2 arrays as parameters and returns the longest one
 const returnLargest = function (array1, array2) {
   if (array1.length > array2.length) {
@@ -85,3 +85,83 @@ const returnLargest = function (array1, array2) {
   }
 };
 console.log(returnLargest([5,4],[4,5,6]))
+
+
+console.log("-------------DOM exercises---------------")
+
+console.log("---------------exercises 31---------------")
+//31) Get the element with an id of "container" from the page
+const container = document.getElementById("container");
+
+console.log("---------------exercises 32---------------")
+//32) Get every <td> element from the page
+const tds  = document.querySelectorAll("td")
+
+console.log("---------------exercises 33---------------")
+ // 33) Use a loop for printing the text inside of every <td> element in the page
+ for (let i = 0; i < tds.length; i++) {
+  tds[i].innerText = "text";
+  console.log("---------------exercises 34---------------")
+      // 34) Write a function to change the heading of the page
+      const changeH1 = function (content) {
+        const h1 = document.querySelector("h1");
+        h1.innerText = content;
+      };
+      changeH1("new text");
+
+      console.log("---------------exercises 35---------------")
+      // 35) Write a function to add an extra row to the table
+      const addRow = function () {
+        const tbody = document.querySelector("tbody");
+        const tr = document.createElement("tr");
+        for (let i = 0; i < 5; i++) {
+          const td = document.createElement("td");
+          td.innerText = i + 1;
+          tr.appendChild(td);
+        }
+        tbody.appendChild(tr);
+      };
+      addRow();
+
+      console.log("---------------exercises 36---------------")
+      // 36) Write a function to add a class of "test" to each row in the table
+      const addClassToRow = function () {
+        const trs = document.querySelectorAll("tr");
+        for (let j = 0; j < trs.length; j++) {
+          trs[j].classList.add("test");
+        }
+      };
+
+      console.log("---------------exercises 37---------------")
+      // 37) Write a function to add a red background to every link in the page
+      const addRedBg = function () {
+        const links = document.querySelectorAll("a");
+        for (let l = 0; l < links.length; l++) {
+          links[l].classList.add("bg-red");
+        }
+      };
+      addRedBg();
+
+      console.log("---------------exercises 38---------------")
+      // 38) Console log "Page loaded" when the page is correctly loaded
+      window.onload = function () {
+        console.log("Page loaded");
+      };
+
+      console.log("---------------exercises 39---------------")
+      // 39) Write a function to add new items to a unordered list
+      const addLi = function () {
+        const ul = document.querySelector("ul");
+        const li = document.createElement("li");
+        li.innerText = "new list item";
+        ul.appendChild(li);
+      };
+      addLi();
+
+      console.log("---------------exercises 40---------------")
+      // 40) Write a function to empty a list
+      const emptyList = function () {
+        const ul = document.querySelector("ul");
+        ul.innerHTML = "";
+      };
+      emptyList();
