@@ -97,10 +97,8 @@ console.log("---------------exercises 32---------------")
 //32) Get every <td> element from the page
 const tds  = document.querySelectorAll("td")
 
-console.log("---------------exercises 33---------------")
- // 33) Use a loop for printing the text inside of every <td> element in the page
- for (let i = 0; i < tds.length; i++) {
-  tds[i].innerText = "text";
+z
+
   console.log("---------------exercises 34---------------")
       // 34) Write a function to change the heading of the page
       const changeH1 = function (content) {
