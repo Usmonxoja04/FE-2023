@@ -217,4 +217,21 @@ p {
 }
 .facilities-col {
     flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
 }
