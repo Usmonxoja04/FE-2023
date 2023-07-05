@@ -152,11 +152,11 @@ nav ul li a {
 .features {
     flex-basis: 50%;
 }
-.feature-img {
+.features-img {
     flex-basis: 50%;
     margin: auto;
 }
-.feature-img img {
+.features-img img {
     width: 70%;
     border-radius: 10px;
 }
@@ -171,6 +171,36 @@ nav ul li a {
     align-items: center;
     margin-bottom: 40px;
 }
+.features-icon .fa {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009688;
+    border: 1px solid #009688;
+}
+.feature-text p {
+    padding: 0 20px;
+    text-align: initial;
+
+}
+@media screen and ( max-width:770px) {
+    .title-text h1 {
+        font-size: 35px;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .features-img  {
+       flex-basis: 100%;
+    } 
+    .features-img img {
+        width: 100%;
+        
+    }          
+}
+
     
 
 
